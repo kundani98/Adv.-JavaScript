@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Javascript</title>
+</head>
+
+<body>
+    <div id="stored"></div>
+    <script>
+ //JSON(JavaScript Object Notation)
+ //JSON is a standard used to communicate with APIs
+
+//  //Parsing JSON
+//  let str = '{"name": "Maaike", "age": 30}';
+// let obj = JSON.parse(str);
+// console.log(obj.name, "is", obj.age);
+// //console.log(obj);
+
+// let dog = {
+//  "name": "wiesje",
+//  "breed": "dachshund"
+// };
+
+// let strdog = JSON.stringify(dog);
+// console.log(typeof strdog);
+// console.log(strdog);
+
+let myList = [{
+ "name": "Learn JavaScript",
+ "status": true
+},
+{
+ "name": "Try JSON",
+ "status": false
+}
+];
+
+const newStr = JSON.stringify(myList);
+const newObj = JSON.parse(newStr);
+newObj.forEach((el)=>{
+ console.log(el);
+});
+
+    </script>
+</body>
+
+</html>
