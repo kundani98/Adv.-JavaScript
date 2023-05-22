@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project10</title>
+
+    <style>
+        .active {
+        display: block !important;
+        }
+      
+        .myText {
+        display: none;
+        }
+        .title {
+        font-size: 1.5em;
+        background-color: #ddd;
+        }
+
+
+        /*
+        //Hangman
+        .gameArea {
+            text-align: center;
+            font-size: 2em;
+        }
+        .box,
+        .boxD {
+            display: inline-block;
+            padding: 5px;
+        }
+        .boxE {
+            display: inline-block;
+            width: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.5em;
+        }  */
+        </style>
+</head>
+<body>
+    <!--Collapsible accordion component-->
+    <div class="container">
+        <div class="title">Title #1</div>
+        <div class="myText">Just some text #1</div>
+        <div class="title">Title #2</div>
+        <div class="myText">Just some text #2</div>
+        <div class="title">Title #3</div>
+        <div class="myText">Just some text #3</div>
+    </div>
+
+<!--Interative voting system -->
+    <div id="message">Complete JavaScript Course</div>
+    <div>
+        <input type="text" id="addFriend">
+        <input type="button" id="addNew" value="Add Friend">
+    </div>
+    <table id="output"></table>
+    <script src="project10.js"></script>
+
+
+<!--Hangman game-->
+<div class="gameArea">
+    <div class="score"> </div>
+    <div class="puzzle"></div>
+    <div class="letters"></div>
+    <button>Start Game</button>
+</div>
+</body>
+</html>
